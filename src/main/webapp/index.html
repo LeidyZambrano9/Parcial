@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reserva Coworking</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Reserva de Espacios de Coworking</h2>
+
+<form action="ReservaServlet" method="post">
+
+<label>Nombre</label>
+<input type="text" name="nombre" required>
+
+<label>Fecha</label>
+<input type="date" name="fecha" required>
+
+<label>Espacio</label>
+<select name="espacio">
+<option value="Escritorio">Escritorio</option>
+<option value="Sala de reuniones">Sala de reuniones</option>
+<option value="Oficina privada">Oficina privada</option>
+</select>
+
+<label>Duración (horas)</label>
+<input type="number" name="duracion" min="1" required>
+
+<button type="submit">Reservar</button>
+
+</form>
+
+<br>
+
+<a href="ListaReservasServlet">Ver reservas</a>
+
+</div>
+
+</body>
+</html>
